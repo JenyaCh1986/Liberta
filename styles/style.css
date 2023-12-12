@@ -94,12 +94,10 @@ body {
         
         display: flex;
         transition: all 0s;
-
     }
 
     .img-slider {
-        width:1000px;
-        
+        width:1000px;  
     }
 
     .slider-prev {
@@ -111,7 +109,6 @@ body {
         border: 2px solid rgba(206, 197, 232, 1);
         line-height: 1;
         background-color: transparent;
-
     }
 
     .slider-next {
@@ -135,7 +132,6 @@ body {
         cursor: pointer;
         background-color: blueviolet;
     }
-
 
 /* main
 ========================================================================== */
@@ -220,7 +216,6 @@ body {
         display: flex;
     }
 
-
 .footer__nav {
     height: 100px;
     padding-left: 100px;
@@ -239,15 +234,12 @@ body {
 }
 .nav__veresneve {
     padding-left: 10px;
-    z-index: 70;
 }
 .nav__map {
     padding-top: 2px;
     width: 200px;
     height: 70px;
 }
-
-
 
     .footer__network {
         width: 250px;
