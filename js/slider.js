@@ -39,6 +39,3 @@ function prevSlider () {
 function rollSlider () {
     sliderLine.style.transform = `translateX(${-sliderCount * sliderWidth}px)`;
 }
-setInterval (()=> {
-    nextSlide()
-}, 1000);

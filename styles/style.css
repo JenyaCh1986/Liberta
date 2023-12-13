@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Expletus+Sans:regular,500,600,700,italic,500italic,600italic,700italic&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Caveat:regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Neucha:regular);
 *,
 *::before {
         margin: 0;
@@ -15,24 +17,27 @@
 }
 h1 {
     font-size: 1.8em;
-    font-family: Expletus Sans;
+    font-family: Neucha;
     color: rgba(230, 95, 158, 1);
     text-shadow: rgba(70, 0, 94, 1) 1px 0px 5px;
 }
 h2 {
     font-size: 2em;
-    font-family: Expletus Sans;
+    font-family: Neucha;
+    color: black;
 }
 h3 {
-    font-size: 3em;
-    font-family: Expletus Sans;
+    font-size: 2em;
+    font-family: Neucha;
     color: rgba(230, 95, 158, 1);
     text-shadow: rgba(70, 0, 94, 1) 1px 0px 2px;
 }
 h4 {
     font-size: 1.2em;
+    color: black;
 
 }
+
 html{
     height: 100%;
     min-width: 320px;
@@ -41,9 +46,10 @@ body {
     height: 100%;
     min-width: 320px;
     line-height: 1;
-    font-family: 'poppins', sans-serif;
-    font-weight: 500;
-    color: rgb(71, 71, 71);
+    font-family: Caveat;
+    font-size: 24px;
+    color:rgba(150, 143, 171, 1);
+
 }
 .liberta {
     min-height: 100%;
@@ -69,7 +75,6 @@ body {
     background-color: rgba(206, 197, 232, 1);
     margin: 20px auto;
 }
-
 .header {
     position: absolute;
     top: 0;
@@ -77,29 +82,23 @@ body {
     width: 100%;
     z-index: 50;
 }
-/*=========================================================================*/
-
 /* slider
 ========================================================================== */
     .slider {
         width:1000px;
         height: 186px;
         position: relative;
-        border: 2px solid rgba(206, 197, 232, 1);
+        
         overflow: hidden;
         margin: auto;
     }
-
     .slider-line {
-        
         display: flex;
         transition: all 0s;
     }
-
     .img-slider {
         width:1000px;  
     }
-
     .slider-prev {
         position: absolute;
         top: 50%;
@@ -107,10 +106,10 @@ body {
         font-size: 50px;
         color: rgba(206, 197, 232, 1);
         border: 2px solid rgba(206, 197, 232, 1);
+        border-radius: 15px;
         line-height: 1;
         background-color: transparent;
     }
-
     .slider-next {
         position: absolute;
         right: 0;
@@ -119,23 +118,20 @@ body {
         font-size: 50px;
         color: rgba(206, 197, 232, 1);
         border: 2px solid rgba(206, 197, 232, 1);
+        border-radius: 15px;
         line-height: 1;
         background-color: transparent;
     }
-
     .slider-next:hover {
         cursor: pointer;
         background-color: blueviolet;
     }
-
     .slider-prev:hover {
         cursor: pointer;
         background-color: blueviolet;
     }
-
 /* main
 ========================================================================== */
-
 .main {
     display: flex;
     align-items: flex-end;
@@ -148,15 +144,18 @@ body {
         top: 0;
     }
     .story__content {
+        font-family:Caveat;
         display: flex;
         padding-top: 200px;
-        padding-right: 40%;
-        padding-bottom: 150px;
+        padding-right: 60%;
+        padding-bottom: 70px;
     }
+    
 /*=========================================================================*/
     .groups__container {
         padding-top: 20px;
         text-align: center;
+       
     }
     .almma__elements{
         padding-top: 10px;
@@ -165,7 +164,6 @@ body {
         grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
     }
-
     .veresneve__elements {
         padding-top: 10px;
         padding-bottom: 20px;
@@ -175,7 +173,6 @@ body {
         justify-items: center;
         margin: auto;
     }
-    
     .element {
         padding-bottom: 10px;
         padding-top: 10px;
@@ -188,79 +185,66 @@ body {
         width: 250px;
     }
  /*=========================================================================*/
-    
     .img_decor2 {
         position: absolute;
         right: -15px;
-        bottom: 15px;
+        bottom: 0px;
         z-index: 70;
     }
     .img_decor1 {
         position: absolute;
         left: -15px;
-        bottom: 40px;
+        bottom: 50px;
         z-index: 70;
     }
 /*=========================================================================*/
-    .footer__container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(206, 197, 232, 1);
-        width: 100%;
-        margin: auto;
-    }
-    .footer__logo{
-        width: 250px;
-        align-items: center;
-        display: flex;
-    }
-
-.footer__nav {
-    height: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
+.main__nav {
     text-align: center;
-    font-size: 0.65em;
+    font-size: 1em;
     justify-content: center;
+    padding: 50px;
 }
 .nav__block {
     display: flex;
-    padding-top: 2px;
+    justify-content: space-between;
 }
 .nav__alma {
-    padding-right: 10px;
-    
+    width: 500px;
+    height: 300px;
+   margin-top: 20px;
 }
 .nav__veresneve {
-    padding-left: 10px;
+    width: 500px;
+    height: 300px; 
+    margin-top: 20px;
 }
 .nav__map {
-    padding-top: 2px;
-    width: 200px;
-    height: 70px;
+    padding-top: 10px;
 }
-
-    .footer__network {
-        width: 250px;
+/*=========================================================================*/
+    .footer__container {
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-        justify-content: center;
-        text-align: center;
+        background-color: rgba(206, 197, 232, 1);
+        margin: auto;
     }
-    .network__logo {
+    .footer__logo{
+        align-items: center;
+        display: flex;
+    }
+    .footer__network {
         display: flex;
         align-items: center;
-        justify-content: center;
     }
-
+    .network__logo {
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+  
     .ending__container {
+        font-size: 12px;
         text-align: center;
-        padding-top: ;
         background-color: rgb(190, 181, 215);
-    }
-    .inst {
-        padding-right: 10px;
-    }
-    .facebook {
-        padding-left: 10px;
     }
